@@ -81,7 +81,7 @@ while startYear != finishYear
     b = startYear % 100
     c = startYear % 400
 
-    if a == 0 and b != 0 or c == 0
+    if a == 0 and (b != 0 or c == 0)
         puts startYear
     end
 
