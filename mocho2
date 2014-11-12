@@ -1,0 +1,29 @@
+#• うるう年。 開始の年と終わりの年を聞いて、その間にあるすべてのうるう年を (もし開始や終了の年がうるう年だったらそれも含めて)表示するプログラムを書きましょう。 うるう年は(1984年とか2004年のように)4で割り切れる数の年です。ただし、100で割り切れる年は うるう年ではなくて (たとえば1800年や1900年)、さらに、それは 400で割り切れない限り です。(つまり、1600年や2000年はうるう年です。) (確かに、このルールは紛らわしいです。でも7月が冬の真ん中に来てしまうのはもっと紛らわしいと 思いませんか?このルールがなかったらそうなったかもしれないのです。)
+puts '開始の年を教えて下さい'
+startYear = gets.chomp.to_i
+puts '終わりの年を教えて下さい'
+endYear = gets.chomp.to_i
+finishYear = endYear + 1
+
+puts "うるう年は以下の通りです"
+
+while startYear != finishYear
+    a = startYear % 4
+    b = startYear % 100
+    c = startYear % 400
+
+    if a == 0 
+        puts startYear
+    end
+
+    if b != 0
+    	puts startYear
+    end
+
+    if c == 0
+    	puts startYear
+    end
+
+    startYear += 1
+end
+
