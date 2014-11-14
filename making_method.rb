@@ -46,7 +46,7 @@ def englishNumber number
   if write > 0
 
     hundreds = englishNumber write
-    numString = hundreds + ' hundred'
+    numString = numString + hundreds + ' hundred'
 
     if remain > 0
       numString = numString + ' '
@@ -80,5 +80,5 @@ def englishNumber number
 
 end
 
-puts englishNumber(1912)
+puts englishNumber(1920)
 
